@@ -262,3 +262,30 @@ body{
     padding:15px 20px;
     width: 10%;
  }
+ footer{
+    background:  #FFFFFF;
+    padding: 50px 160px;
+ }
+ .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:normal;
+    margin: auto;
+ }
+.footer-logo{
+    width: 22.43rem;
+}
+.footer-link li{
+    list-style: none;
+    margin-bottom: 32px;
+}
+.footer-link a{
+    color:#6B7280 ;
+    text-decoration: none;
+}
+.twitter{
+   margin-bottom: 10px;
+}
+.footer-icon img{
+    margin-left: 24px;
+}
