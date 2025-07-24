@@ -140,4 +140,30 @@ body{
 }
 .lover-container{
     margin-top: 13rem;
+    display: flex;
+    
+    align-items: center;
+    position: relative;
+  
+}
+.store{
+    width: 40.75rem;
+    height: 44.68rem;
+    margin-left: 50px;
+
+}
+.badge{
+    width: 17.8rem;
+    position: absolute;
+    top: -120px;
+    left: 480px;
+}
+.plant-text {
+     margin-left: 50px;
+     padding:65px 0 ;
+     text-align: left;
+   
+}
+.plant-text li{
+    margin-top: 40px;
 }
