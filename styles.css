@@ -20,6 +20,13 @@ body{
 .font-noto{
     font-family: Noto serif;
 }
+.section-title{
+    margin-top:7.5rem ;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 80%;
+    margin: auto;
+}
 .p-color{
     font-size: 1.3rem;
     color:rgba(0, 0, 0, 0.5) ;
@@ -100,11 +107,6 @@ body{
     width: 80%;
     margin: auto;
 }
-.section-title{
-    margin-top:7.5rem ;
-    text-align: center;
-    margin-bottom: 3rem;
-}
 .section-title h2{
     font-size: 3.2rem;
     font-weight: bold;
@@ -177,7 +179,6 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-
  }
  .deal-card a{
      color: #FFFFFF;
@@ -288,4 +289,63 @@ body{
 }
 .footer-icon img{
     margin-left: 24px;
+}
+
+@media screen and (max-width:576px){
+    .logo{
+        width: 3.93rem;
+    }
+    .gayebul{
+        display: none;
+    }
+    .navbar ul li a{
+    color:#000000;
+    font-weight: 400; 
+}
+.banner-container{
+   flex-direction: column-reverse;
+   margin-top: 2rem;
+   align-items: normal;
+}
+.banner-title{
+    margin-top:1.73rem ;
+     height: 12rem;
+    text-align: left;
+}
+.banner-title h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+
+}
+.banner-img{
+    width:100%;
+}
+.p-color{
+    font-size: 1rem;
+}
+.section-title{
+    margin-top:15px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.section-title h2{
+    font-size: 2rem;
+}
+.plants-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.plants-card h5{
+    font-size: 1rem;
+    line-height:auto;
+    margin-top: 30px;
+   
+}
+.plants-card h4{
+    font-size: 1rem;
+    margin: 10px;
+    
+}
+
+    
 }
