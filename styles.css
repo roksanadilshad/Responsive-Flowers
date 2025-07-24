@@ -186,7 +186,7 @@ body{
  
  .deal-card-1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(assets/deal-ana.png);
-    width: 22.81rem;
+    width:22.81rem;
     height: 12rem;
     color: #FFFFFF;
     text-align: center;
@@ -232,4 +232,33 @@ body{
     color: #FFFFFF;
     margin-top: 25px;
     border-radius: 14px;
+ }
+ /* brunch */
+ .brunch{
+    height:33.31rem ;
+    margin: auto;
+    margin-top:120px ;
+ }
+ .brunch-container{
+    background-image: url(assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100%;
+    background-size: 100vw;
+    text-align: center;
+    padding: 200px 305px;
+ }
+ .brunch-container h2{
+    font-weight: bold;
+    font-size: 3.12rem;
+    padding-bottom: 23px;
+    color: #FFFFFF;
+ }
+ .brunch-container input{
+    padding:15px 540px 15px 20px;
+    
+ }
+ .brunch-container .btn{
+    padding:15px 20px;
+    width: 10%;
  }
