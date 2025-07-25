@@ -18,7 +18,12 @@
                 <li><a href="" class="nav-bold gayebul" >Home</a></li>
                 <li><a href="" class="gayebul">Shop</a></li>
                 <li><a href="" class="gayebul">About Us</a></li>
-                <li><a href="" class="nav-bold nav-cart"><i class="ri-shopping-cart-line"></i> Cart($56)</a></li>
+
+
+                <li><a href="" class="nav-bold nav-cart" onclick="cart()"><i class="ri-shopping-cart-line"></i> Cart($56)</a>
+                </li>
+
+
             </ul>
          </nav>
          <div class="banner">
@@ -112,7 +117,7 @@
             </div>
 
         </section>
-        <section class="plant-lover" hidden>
+        <section class="plant-lover">
             <div class="lover-container">
                 <div class="lover-img">
                 <img src="assets/flower-store.png" alt="" class="store">
@@ -121,7 +126,7 @@
     
                 </div>
                 <div class="section-title plant-text">
-                <h2 class="font-noto">Flower & Plants <br>Lover</h2>
+                <h2 class="font-noto">Flower & Plants <br class="gayebul">Lover</h2>
                    <ul>
                       <li class="p-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                       <li class="p-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -131,7 +136,7 @@
             </div>
 
         </section>
-         <section class="latest-deal" hidden>
+         <section class="latest-deal">
             <div class="section-title">
             <h2 class="font-noto">
                 <span class="orange-bold">Latest</span> Deals
@@ -161,17 +166,17 @@
             </div>
 
          </section>
-         <section class="brunch" hidden>
+         <section class="brunch">
                 <div class="brunch-container">
                     <h2 class="font-noto">
                         Join the colorful Bunch
                     </h2>
-                    <input type=" email" name="email" id="email" placeholder="Write email"><input type="button" name="subscribe" id="subscribe" class="btn" value="Suscribe">
+                    <input type=" email" name="email" id="email" placeholder="Write email"><input type="button" name="subscribe" id="subscribe" class="btn" value="Subscribe">
                 </div>
          </section>
        
     </main>
-    <footer hidden>
+    <footer>
          <div class="footer-container">
             <div class="footer-logo">
                 <img src="assets/logo.png" alt="">
@@ -206,6 +211,14 @@
             </div>
          </div>
     </footer>
+
+
+
+    <script>
+        function cart() {
+            alert("Flower Added to Cart");
+        }
+    </script>
     
 </body>
 </html>

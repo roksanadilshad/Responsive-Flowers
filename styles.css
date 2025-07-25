@@ -6,10 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 .inter{
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
 }
+ 
 body{
     background:  #8888ec1c;
 }
@@ -20,13 +19,7 @@ body{
 .font-noto{
     font-family: Noto serif;
 }
-.section-title{
-    margin-top:7.5rem ;
-    text-align: center;
-    margin-bottom: 3rem;
-    width: 80%;
-    margin: auto;
-}
+
 .p-color{
     font-size: 1.3rem;
     color:rgba(0, 0, 0, 0.5) ;
@@ -39,11 +32,12 @@ body{
     padding: 20px 0;
     border: 1px solid #E95A08;
     transition: .5s;
-    width: 75%;
+    width: 100%;
 }
 .btn:hover{
     transform: scale(1.2);
 }
+
 /* header */
 .navbar{
     width: 80%;
@@ -65,13 +59,24 @@ body{
 .navbar ul li{
      list-style: none;
      margin-left: 48px;
+     transition: .5s;
 }
 .navbar ul li a{
     text-decoration: none;
     color:#8987A1;
     line-height: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .5s;
     
 }
+.navbar ul li:hover{
+    transform: scale(1.5);
+}
+.navbar ul li a:hover{
+    color: #E95A08;
+}
+
 .nav-bold{
     font-weight: bold;
     color:#252432 ;
@@ -86,7 +91,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7.5rem;
+    margin: 7.5rem 0;
 }
 .banner-title{
     margin-top:8rem ;
@@ -107,6 +112,12 @@ body{
     width: 80%;
     margin: auto;
 }
+.section-title{
+    
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
 .section-title h2{
     font-size: 3.2rem;
     font-weight: bold;
@@ -116,12 +127,17 @@ body{
     display: grid;
     grid-template-columns: repeat(4,2fr);
     gap: 1.87rem;
+    margin: 3rem 0;
 }
 .plants-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     
+}
+.plants-card img{
+    width: 100%;
+    height: auto;
 }
 .plants-card h5{
     font-size: 1.3rem;
@@ -141,30 +157,42 @@ body{
     margin: auto;
 }
 .lover-container{
-    margin-top: 13rem;
+    margin:13rem 0 8rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-  
 }
 .store{
     width: 40.75rem;
     height: 44.68rem;
-    margin-left: 50px;
+    
 
 }
 .badge{
     width: 17.8rem;
     position: absolute;
     top: -120px;
-    left: 480px;
+    left: 430px;
+    animation:  spin 10s linear infinite;
 }
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .plant-text {
      margin-left: 50px;
-     
+     width: 100%;
      text-align: left;
    
+}
+.plant-text ul{
+    margin-left: 3rem;
 }
 .plant-text li{
     margin-top: 40px;
@@ -173,26 +201,39 @@ body{
  */
  .latest-deal{
     width: 80%;
-    margin: auto;
+    margin:3rem auto;
  }
  .latest-deal-countainer{
    display: flex;
    align-items: center;
    justify-content: center;
+   margin: 3rem 0;
+
  }
  .deal-card a{
      color: #FFFFFF;
+     transition: .5s;
+ }
+ .deal-card a:hover{
+     color:#E95A08;
      
  }
+ .deal-card{
+    width: 33.33%;
+ }
+ 
  
  .deal-card-1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(assets/deal-ana.png);
-    width:22.81rem;
-    height: 12rem;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #FFFFFF;
     text-align: center;
     padding: 65px 50px;
-    border-radius: 14px;
+   border-radius: 14px;
+     width: 100%;
+     max-width: 100%;
+     height: auto;
    
  }
  .deal-card-1 h3 ,
@@ -203,10 +244,13 @@ body{
  }
  .deal-card-2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(assets/deal-zabo.png);
-    width: 47rem;
-    height: 26.43rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+     width: 66.67%;
+     max-width: 100%;
+     height: auto;
     text-align: center;
-    padding: 65px 50px;
+    padding: 125px 50px;
     color: #FFFFFF;
     margin-left: 28px;
     border-radius: 14px;
@@ -216,18 +260,27 @@ body{
            font-size: 2.5rem;
            padding-bottom: 20px;
            font-weight: bold;
-           padding-top: 150px;
+           padding-top: 60px;
  }
  .deal-card-2 a{
     color: #FFFFFF;
     font-size: 1.3rem;
     font-weight: 500;
     padding-top: 10px;
+    padding-bottom: 95px;
+    transition: .5s;
  }
+ .deal-card-2 a:hover{
+    color: #E95A08;
+ }
+
  .deal-card-3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(assets/deal-bloom.png);
-     width: 22.81rem;
-    height: 12rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+     width: 100%;
+     max-width: 100%;
+     height: auto;
     text-align: center;
     padding: 65px 50px;
     color: #FFFFFF;
@@ -237,8 +290,8 @@ body{
  /* brunch */
  .brunch{
     height:33.31rem ;
-    margin: auto;
-    margin-top:120px ;
+    margin:120px auto 0 auto;
+   
  }
  .brunch-container{
     background-image: url(assets/news-letter-bg.png);
@@ -257,6 +310,7 @@ body{
  }
  .brunch-container input{
     padding:15px 540px 15px 20px;
+    border: none;
     
  }
  .brunch-container .btn{
@@ -275,20 +329,34 @@ body{
  }
 .footer-logo{
     width: 22.43rem;
+    margin-bottom: 1.5rem;
 }
 .footer-link li{
     list-style: none;
     margin-bottom: 32px;
+    transition: .5s;
+}
+.footer-link li:hover{
+   transform:scale(1.3) ;
 }
 .footer-link a{
     color:#6B7280 ;
     text-decoration: none;
+    transition: .5s;
+}
+.footer-link a:hover{
+    color:#E95A08 ;
+   
 }
 .twitter{
    margin-bottom: 10px;
 }
 .footer-icon img{
     margin-left: 24px;
+    transition: .5s;
+}
+.footer-icon img:hover{
+    transform: scale(1.3);
 }
 
 @media screen and (max-width:576px){
@@ -301,16 +369,18 @@ body{
     .navbar ul li a{
     color:#000000;
     font-weight: 400; 
+    font-size: .9rem;
 }
 .banner-container{
    flex-direction: column-reverse;
-   margin-top: 2rem;
-   align-items: normal;
+   margin: 2rem 0;
+   
 }
 .banner-title{
     margin-top:1.73rem ;
      height: 12rem;
     text-align: left;
+    width:100%;
 }
 .banner-title h1{
     font-weight: bold;
@@ -320,31 +390,121 @@ body{
 .banner-img{
     width:100%;
 }
+
 .p-color{
-    font-size: 1rem;
+    font-size: .9rem;
 }
 .section-title{
-    margin-top:15px;
+    margin:1rem auto;
     text-align: center;
-    margin-bottom: 1rem;
+    
 }
+
 .section-title h2{
     font-size: 2rem;
 }
 .plants-container{
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    gap: 10px;
+    margin: 0;
 }
 .plants-card h5{
     font-size: 1rem;
     line-height:auto;
-    margin-top: 30px;
+    margin-top: 20px;
    
 }
 .plants-card h4{
     font-size: 1rem;
     margin: 10px;
     
+}
+.btn{
+    margin-top:10px ;
+    padding: 10px 0;
+   
+}
+
+.lover-container,
+.latest-deal-countainer{
+   margin: 2.5rem auto;
+   flex-direction: column;
+  
+}
+.lover-container img{
+    width: 100%;
+    height: 100%;
+}
+.badge{
+   display: none;
+}
+.plant-text {
+     margin-left: 0px;
+     text-align: left;
+   
+}
+.plant-text ul{
+    margin-left: 2rem;
+}
+.plant-text li{
+    margin-top: 1rem;
+}
+.deal-card{
+    width: 100%;
+    height: auto;
+    margin:0 auto 1rem auto;
+ }
+ .deal-card-2 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+ }
+ .deal-card-2 h3 {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+ }
+ .deal-card-2 a{
+    font-size: 1rem;
+    padding-top: 10px;
+ }
+
+
+ .brunch{
+    height:auto;
+    margin: auto;
+    margin-top:40px ;
+ }
+ .brunch-container{
+    padding: 50px 16px 30px 16px;
+ }
+ .brunch-container h2{
+    font-size:1.5rem;
+    padding-bottom: 10px;
+    
+ }
+ .brunch-container input{
+    padding:10px 50px 10px 20px;
+    
+ }
+ .brunch-container .btn{
+    padding:13px 50px 11px 10px;
+    margin: 0;
+    font-size: 10px;
+ }
+
+ footer{
+    padding: 2rem 1rem;
+ }
+ .footer-container{
+    flex-direction: column;
+ }
+ .footer-logo img{
+    width: 9.43rem;
+ }
+.footer-icon img{
+    margin-right: 24px;
+    margin-left: 0;
+    cursor: pointer;
 }
 
     
