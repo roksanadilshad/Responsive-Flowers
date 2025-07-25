@@ -10,7 +10,7 @@
 }
  
 body{
-    background:  #8888ec1c;
+    background: #F5F8FF;
 }
 /* shared style */
 .orange-bold{
@@ -463,6 +463,11 @@ body{
     width: 100%;
     height: auto;
     margin: auto;
+    text-align: center;
+    padding: 65px 50px;
+    color: #FFFFFF;
+    margin-left: 0;
+    border-radius: 14px;
  }
  .deal-card-2 h3 {
     font-size: 1.25rem;
