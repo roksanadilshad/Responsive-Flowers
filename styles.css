@@ -104,8 +104,8 @@ body{
     font-size: 4.3rem;
 
 }
-.banner-img{
-    width:35.62rem;
+.banner-img img{
+    width:100%;
 }
 /* plants */
 .plants{
@@ -370,6 +370,10 @@ body{
     color:#000000;
     font-weight: 400; 
     font-size: .9rem;
+   
+}
+.navbar ul li {
+    margin: 0;
 }
 .banner-container{
    flex-direction: column-reverse;
@@ -387,8 +391,9 @@ body{
     font-size: 2.5rem;
 
 }
-.banner-img{
+.banner-img img{
     width:100%;
+    margin-left: 40px;
 }
 
 .p-color{
